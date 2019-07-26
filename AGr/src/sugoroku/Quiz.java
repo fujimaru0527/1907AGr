@@ -390,11 +390,8 @@ class Shikoku2 implements Quiz {
 }
 
 // 九州クラス
-<<<<<<< HEAD
+
 class kyusyu1 implements Quiz {
-=======
-class Kyusyu implements Quiz {
->>>>>>> e4437a1731ceb89e23eef46b259ff6b9170e9d58
 
 	@Override
 	public void quiz() {
