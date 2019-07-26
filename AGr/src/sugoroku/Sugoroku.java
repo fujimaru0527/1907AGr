@@ -5,14 +5,14 @@ import java.util.ArrayList;
 public class Sugoroku {
 
 	//すごろくの長さ
-	ArrayList<String> sugoroku = new ArrayList<String>(32);
+	ArrayList<String> sugoroku = new ArrayList<String>();
 
 	//sugorokuフィールドの作成
 	public Sugoroku() {
 
 		//すごろくにイベント発生↓
 		sugoroku.add(0, "スタート");
-		for (int i = 1; i < sugoroku.size(); i++) {
+		for (int i = 1; i <= 32; i++) {
 			/*
 			 * 偶数のときにプラスイベント、奇数のときにマイナスイベント
 			 *

@@ -198,7 +198,7 @@ class Shikoku implements Quiz {
 }
 
 // 九州クラス
-class kyusyu implements Quiz {
+class Kyusyu implements Quiz {
 
 	@Override
 	public void quiz() {
