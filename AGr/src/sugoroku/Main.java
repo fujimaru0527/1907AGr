@@ -81,13 +81,16 @@ public class Main {
 		}
 		if (aPlayer.getPoint() > bPlayer.getPoint()) {
 			System.out.println("結果発表！！");
+			System.out.println(aPlayer.name+aPlayer.getPoint()+":"+bPlayer.name+bPlayer.getPoint());
 			System.out.println("勝者は" + aPlayer.name + "でした！");
 		} else if (aPlayer.getPoint() < bPlayer.getPoint()) {
 			System.out.println("結果発表！！");
+			System.out.println(aPlayer.name+aPlayer.getPoint()+":"+bPlayer.name+bPlayer.getPoint());
 			System.out.println("勝者は" + bPlayer.name + "でした！");
 		}else{
 			System.out.println("結果発表！！");
-			System.out.println("勝者はいませんでした！");
+			System.out.println(aPlayer.name+aPlayer.getPoint()+":"+bPlayer.name+bPlayer.getPoint());
+			System.out.println("引き分け！");
 		}
 		System.out.println("おつかれさまでした～");
 
