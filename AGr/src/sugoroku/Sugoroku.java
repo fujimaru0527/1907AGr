@@ -14,7 +14,7 @@ public class Sugoroku {
 		//すごろくにイベント発生↓
 		sugoroku.add(0,"スタート");
 		for(int i = 1; i < sugoroku.size() /* =8 */  ; i++) {
-
+			//偶数のときに-1、奇数のときに1
 			if(i%2 == 0 ) {
 				sugoroku.add(i, "-1");
 			}else {
