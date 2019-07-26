@@ -2,11 +2,12 @@ package sugoroku;
 
 public class Dice {
 
-	public int num;
+	private int num;
 
 	//ダイスロール
 	public Dice() {
 		num = (int) (Math.random() * 6) + 1;
+		System.out.println(num);
 	}
 
 	//ダイスの出た目
