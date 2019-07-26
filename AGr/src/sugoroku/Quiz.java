@@ -1,12 +1,7 @@
 package sugoroku;
 
-public class Game {
-
-}
-
-interface Quiz {
+public interface Quiz{
 	void quiz();
-
 	int answer(int answer);
 }
 
