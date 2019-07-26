@@ -1,8 +1,8 @@
 package sugoroku;
 
 public class Player {
-	public int point;
-	String name;
+	private int point;
+	public String name;
 	int num;
 	int position;
 
@@ -16,12 +16,9 @@ public class Player {
 		}
 
 	//ポイント加算
-	public void pointPlus(int var){
+	public void setPoint(int var){
 		this.point+=var;
-	}
-	//ポイント減産
-	public void pointMinus(int var){
-		this.point-=var;
+		System.out.println("現在のポイントは"+point+"です。");
 	}
 	//ポイントゲッター
 	public int getPoint(){
