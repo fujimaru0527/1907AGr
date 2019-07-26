@@ -29,7 +29,7 @@ public class Main {
 				// 初期値
 				int start = aPlayer.position;
 				aPlayer.position += dice.getNum();
-				if (aPlayer.position > 32) {
+				if(aPlayer.position > 32){
 					aPlayer.position = 32;
 				}
 
