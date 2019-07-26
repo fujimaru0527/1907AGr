@@ -23,6 +23,15 @@ public class Main {
 
 		System.out.print(aPlayer.name+"の順番");
 
+		Dice dice = new Dice();
+		//プレーヤーを進める
+		aPlayer.point(dice.getNum());
+
+
+
+
+
+
 
 
 
