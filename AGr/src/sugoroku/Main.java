@@ -58,7 +58,7 @@ public class Main {
 				// 初期値
 				int start = bPlayer.position;
 				bPlayer.position += dice.getNum();
-				if (bPlayer.position > 32) {
+				if(bPlayer.position > 32){
 					bPlayer.position = 32;
 				}
 
@@ -79,17 +79,6 @@ public class Main {
 			}
 
 		}
-		if (aPlayer.getPoint() > bPlayer.getPoint()) {
-			System.out.println("結果発表！！");
-			System.out.println("勝者は" + aPlayer.name + "でした！");
-		} else if (aPlayer.getPoint() < bPlayer.getPoint()) {
-			System.out.println("結果発表！！");
-			System.out.println("勝者は" + bPlayer.name + "でした！");
-		}else{
-			System.out.println("結果発表！！");
-			System.out.println("勝者はいませんでした！");
-		}
-		System.out.println("おつかれさまでした～");
 
 	}
 
@@ -148,5 +137,6 @@ public class Main {
 		return point;
 
 	}
+
 
 }
