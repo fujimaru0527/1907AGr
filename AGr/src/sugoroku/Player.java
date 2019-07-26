@@ -6,9 +6,9 @@ public class Player {
 	int num;
 
 	//初期値がポイント０、名前Player+nam
-	public Player(int nam){
+	public Player(int num){
 		this.point=0;
-		this.num = nam;
+		this.num = num;
 		this.name="Player"+this.num;
 
 	}

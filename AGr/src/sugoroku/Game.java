@@ -6,8 +6,7 @@ public class Game {
 
 interface Quiz {
 	void quiz();
-
-	void answer();
+    int answer(int quizanswer);
 }
 
 // 北海道クラス
@@ -16,16 +15,27 @@ class Hokkaido implements Quiz {
 	@Override
 	public void quiz() {
 		// TODO 自動生成されたメソッド・スタブ
-		System.out.println("クイズの内容");
+		System.out.println("北海道にまつわるクイズです。");
+		System.out.println("北海道・札幌市の7月の平均気温は何度でしょうか？");
+		System.out.println("1:20.5℃"); //正解
+		System.out.println("2:19.8℃");
+		System.out.println("3:21.2℃");
+		System.out.println("4:15.3℃");
 	}
 
 	@Override
-	public void answer() {
-		// TODO 自動生成されたメソッド・スタブ
-		System.out.println("A.");
-		System.out.println("B.");
-		System.out.println("C.");
-		System.out.println("D.");
+	public int answer(int answer) {
+		//メインから入力してもらった値が来る
+
+		switch(answer){
+		case 1:
+			System.out.println("正解！+５ポイントGet!");
+			return 5;
+		default:
+			System.out.println("不正解！残念！");
+			return 0;
+		}
+
 	}
 
 }
@@ -34,7 +44,7 @@ class Hokkaido implements Quiz {
 class Touhoku implements Quiz {
 
 	@Override
-	public void quiz() {
+	public int quiz() {
 		// TODO 自動生成されたメソッド・スタブ
 		System.out.println("クイズの内容");
 	}
