@@ -11,9 +11,12 @@ public class Main {
 		Player bPlayer = new Player(2);
 
 		System.out.print("ゲーム開始");
+
 		Scanner scan = new Scanner(System.in);
 
 		Sugoroku sugoroku = new Sugoroku();
+
+		sugoroku.bord(aPlayer.position,bPlayer.position);
 		int playerNum = 1;
 		while (true) {
 			if (aPlayer.position < 32) {
@@ -34,6 +37,8 @@ public class Main {
 				}
 
 				aPlayer.setPoint(sugoroku.judge(aPlayer.position));
+
+				sugoroku.bord(aPlayer.position,bPlayer.position);
 
 				scan.next();
 				Quiz(start, aPlayer.position);
@@ -63,6 +68,8 @@ public class Main {
 				}
 
 				bPlayer.setPoint(sugoroku.judge(bPlayer.position));
+
+				sugoroku.bord(aPlayer.position,bPlayer.position);
 				scan.next();
 				Quiz(start, bPlayer.position);
 				if (bPlayer.position == 32) {
