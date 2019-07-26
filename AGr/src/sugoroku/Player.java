@@ -3,13 +3,13 @@ package sugoroku;
 public class Player {
 	public int point;
 	String name;
-	int nam;
+	int num;
 
 	//初期値がポイント０、名前Player+nam
 	public Player(int nam){
 		this.point=0;
-		this.nam = nam;
-		this.name="Player"+this.nam;
+		this.num = nam;
+		this.name="Player"+this.num;
 
 	}
 	//ポイント加算
