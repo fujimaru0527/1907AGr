@@ -29,7 +29,7 @@ public class Main {
 				// 初期値
 				int start = aPlayer.position;
 				aPlayer.position += dice.getNum();
-				if (aPlayer.position > 32) {
+				if(aPlayer.position > 32){
 					aPlayer.position = 32;
 				}
 
@@ -58,7 +58,7 @@ public class Main {
 				// 初期値
 				int start = bPlayer.position;
 				bPlayer.position += dice.getNum();
-				if (bPlayer.position > 32) {
+				if(bPlayer.position > 32){
 					bPlayer.position = 32;
 				}
 
@@ -93,6 +93,7 @@ public class Main {
 			System.out.println("引き分け！");
 		}
 		System.out.println("おつかれさまでした～");
+
 
 	}
 
@@ -151,5 +152,6 @@ public class Main {
 		return point;
 
 	}
+
 
 }
