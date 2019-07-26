@@ -13,8 +13,8 @@ public class Player {
 		this.name ="Player"+this.num;
 		this.position = 0;
 		System.out.print("現在地は　" + position + "　北海道（仮）");
+		}
 
-	}
 	//ポイント加算
 	public void pointPlus(int var){
 		this.point+=var;
