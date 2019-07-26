@@ -25,7 +25,12 @@ public class Main {
 
 		Dice dice = new Dice();
 		//プレーヤーを進める
-		aPlayer.point(dice.getNum());
+		aPlayer.position += dice.getNum();
+
+		int point sugoroku.(aPlayer.position);
+
+
+
 
 
 
