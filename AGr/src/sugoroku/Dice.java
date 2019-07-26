@@ -7,7 +7,10 @@ public class Dice {
 	//ダイスロール
 	public Dice() {
 		num = (int) (Math.random() * 6) + 1;
-		System.out.println(num);
+		//何マス進むかの表示
+		System.out.println("出た目 : "+num);
+		System.out.println(num+"マス進みます。");
+
 	}
 
 	//ダイスの出た目
