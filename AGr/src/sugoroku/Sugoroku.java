@@ -4,13 +4,13 @@ import java.util.ArrayList;
 
 public class Sugoroku {
 
-	//すごろくの長さ
+	// すごろくの長さ
 	ArrayList<String> sugoroku = new ArrayList<String>();
 
-	//sugorokuフィールドの作成
+	// sugorokuフィールドの作成
 	public Sugoroku() {
 
-		//すごろくにイベント発生↓
+		// すごろくにイベント発生↓
 		sugoroku.add(0, "スタート");
 		for (int i = 1; i <= 32; i++) {
 			/*
@@ -26,6 +26,7 @@ public class Sugoroku {
 	}
 
 	public int judge(int n) {
+
 		if (n % 2 == 0) {
 			System.out.println(sugoroku.get(n));
 			return 1;
@@ -33,6 +34,7 @@ public class Sugoroku {
 			System.out.println(sugoroku.get(n));
 			return -1;
 		}
+
 	}
 
 }
