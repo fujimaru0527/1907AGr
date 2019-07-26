@@ -26,6 +26,7 @@ public class Sugoroku {
 	}
 
 	public int judge(int n) {
+
 		if (n % 2 == 0) {
 			System.out.println(sugoroku.get(n));
 			return 1;
@@ -33,6 +34,7 @@ public class Sugoroku {
 			System.out.println(sugoroku.get(n));
 			return -1;
 		}
+
 	}
 
 	public void bord(int aPlayer, int bPlayer) {
